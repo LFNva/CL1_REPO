@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet">
+<script th:src="@{/js/bootstrap/bootstrap.bundle.js}" type="text/javascript"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-primary" th:fragment="nav">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Especialidad</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Formularios Especialidad
+	          </a>
+	          <ul class="dropdown-menu">
+	            <li><a class="dropdown-item" th:href="@{Especialidad/frmListEspecialidad}">Listado Especialidad</a></li>
+	            <li><a class="dropdown-item" href="#">Registrar Especialidad</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</body>
+</html>
